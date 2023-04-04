@@ -34,7 +34,7 @@ class Dks(private val app: Application, private val manager: FragmentManager?, p
 
     override var speechIntent: Intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
 
-    override var languageDetailsIntent: Intent = RecognizerIntent.getVoiceDetailsIntent(app)
+    override var languageDetailsIntent: Intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
 
     override var audioManager: AudioManager = app.getSystemService(Context.AUDIO_SERVICE) as AudioManager
 
